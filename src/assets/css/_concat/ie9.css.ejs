@@ -1,0 +1,41 @@
+---
+permalink: assets/css/ie9.css
+---
+
+.social-links__item .margin-left-10{
+    margin: 0;
+}
+
+.main-menu{
+    margin-top: 1px;
+}
+
+.social-link{
+    outline: none;
+}
+
+.social-link:hover, .social-link:focus {
+    cursor: pointer;
+    transform: scale(1);
+    opacity: 1;
+    outline: none;
+}
+
+
+.social-links {
+    top: -1px;
+}
+
+
+
+@media screen and (max-width: <%= config.breakpoints.mobile + "px" %>){
+    .header__logo {
+        margin-top: 0px;
+    }
+
+    .header__social-links-mobile{
+        margin-left: 15px;
+    }
+}
+
+

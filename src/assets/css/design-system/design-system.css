@@ -1,0 +1,160 @@
+.border{
+    border: 1px solid #f0f0f0;    
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.ui-item {
+  background-color: #232323;
+  height: 100%;
+  min-height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ui-item img{
+  width: 100%;
+  height: auto;
+}
+
+.color-palette__label {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.color-palette__hex {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;  
+}
+
+.assets__block {
+  background-color: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  min-height: 112px;
+}
+
+.assets__block--dark {
+  background-color: #161515;
+}
+
+.assets__block--full {
+  width: 100%;
+  height: 100%;
+}
+
+
+.design-system img {
+  max-width: 100%;
+  height: auto;
+}
+
+.design-system_title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+
+.components-list {
+  margin: 0;
+  list-style: none;
+}
+
+.component-card__inner {
+  width: 100%;
+}
+
+.components-list a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #0B2239;
+}
+
+@supports(display: flex) {
+  .component-card__inner {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      box-sizing: border-box;
+      border: 1px solid #EDEDED;
+  }
+
+  .component-card__inner .component-card__img {
+      flex-grow: 1;
+      order: 1;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 1;
+  }
+
+  .component-card__inner .component-card__img * {
+      margin-top: auto;
+  }
+
+  .component-card__inner .component-card__heading {
+      position: relative;
+      z-index: 2;
+      background-color: #FFFFFF;
+      order: 2;
+  }
+}
+
+.component-card__img {
+  background-color: #F7F9FA;
+  border-bottom: 1px solid #EDEDED;
+}
+
+.component-card__img img {
+  display: block;
+  height: auto;
+  width: 64.4%;
+  margin: auto auto 0 auto;
+}
+
+.component-card__heading {
+  color: #0B2239;
+  margin: 0;
+  padding: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/* ========== */
+/* Typography */
+/* ========== */
+
+.typoghraphy-block{
+    border: 1px solid #F0F0F0;
+}
+
+.typography-block__description-item{
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.typography-block__description-item span{
+    font-size: 14px;
+    line-height: 24px;
+    color: #939A9C;
+    margin-right: 10px;
+}
+
+
+

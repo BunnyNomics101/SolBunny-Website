@@ -1,0 +1,101 @@
+@supports (display: flex) {
+    .blocks-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .blocks-container__full-height-parrent {
+        display: flex;
+    }
+
+    .blocks-container__full-height-child {
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .clearfix::before,
+    .clearfix::after {
+        content: none;
+    }
+
+    @media (max-width: 599px) {
+        .blocks-container--wrap > .blocks-container__item--half-width {
+            width: 50%;
+            float: none;
+        }
+    }
+
+    /* self width */
+    
+    .blocks-container--inline {
+        padding: 0;
+    }
+
+    .blocks-container--inline.text-left {
+        justify-content: flex-start;
+    }
+
+    .blocks-container--inline.text-center {
+        justify-content: center;
+    }
+
+    .blocks-container--inline.text-right {
+        justify-content: flex-end;
+    }
+
+    .blocks-container--inline > .blocks-container__item {
+        display: block;
+    }
+    
+    .blocks-container--inline > .blocks-container__item > * {
+        display: block;
+    }
+
+    .blocks-container--inline .blocks-container__item-buffer {
+        padding: 8px;
+    }
+
+    /* fix width */
+    
+    .blocks-container--fix-width-left,
+    .blocks-container--self-width-left {
+        justify-content: flex-start;
+    }
+
+    .blocks-container--fix-width-right,
+    .blocks-container--self-width-right {
+        justify-content: flex-end;
+    }
+
+    .blocks-container--fix-width-center {
+        width: auto;
+        justify-content: center;
+    }
+
+    /* fix + full width */
+
+    .blocks-container--fix-full,
+    .blocks-container__item--fix {
+        position: static;
+    }
+
+    .blocks-container--fix-full {
+        flex-wrap: nowrap;
+    }
+
+    .blocks-container--fix-full .blocks-container__item--fix {
+        flex-shrink: 0;
+    }
+
+    .blocks-container__item--full {
+        margin-left: 0;
+    }
+
+    /* block aligning */
+
+    .d-flex {
+        display: flex;
+    }
+}

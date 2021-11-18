@@ -1,0 +1,91 @@
+/*
+---
+permalink: assets/css/typography.css
+---
+*/
+
+h1,h2,h3{
+    font-family: "Poppins";
+    font-weight: 400;
+}
+
+p,span,time,a,button, li{
+    font-family: 'questrial';
+}
+
+
+/* h1 - 75 */
+/* text - 25 */
+/* text-s - 16 */
+
+h1, .h1{
+    font-size: 75px;
+    line-height: 87px;
+}
+
+h2, h2{
+    font-size: 50px;
+    line-height: 1.2em;
+}
+
+.text{
+    font-size: 25px;
+    line-height: normal;
+}
+
+.text-s{
+    font-size: 17px;
+    line-height: 1.6em;
+}
+
+.heading-small{
+    font-size: 14px;
+    letter-spacing: 0.3em;
+}
+
+/* 400 - regular */
+/* 700 - bold */
+
+.regular{
+    font-weight: 400;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+
+/* poppins - Poppins */
+/* quest - questrial */
+
+
+.poppins{
+    font-family: "Poppins";
+}
+
+.quest{
+    font-family: 'questrial';
+}
+
+
+@media screen and (max-width: <%= config.breakpoints.mobile + "px" %>){
+    h1, .h1{
+        font-size: 57px;
+        line-height: 60px;
+    }
+    
+    .text{
+        font-size: 20px;
+        line-height: normal;
+    }
+    
+    .text-s{
+        font-size: 14px;
+    }
+    
+    .heading-small{
+        font-size: 12px;
+        letter-spacing: 0.3em;
+    }
+    
+}

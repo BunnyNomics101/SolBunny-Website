@@ -1,0 +1,207 @@
+.clearfix-ds { 
+  zoom: 1;
+  display: block;
+  width: 100%;
+}
+
+.clearfix-ds:before,
+.clearfix-ds:after { 
+  content: "";
+  display: table; 
+}
+
+.clearfix-ds:after {
+  clear: both; 
+}
+
+.block-1-ph {
+  width: 8.33333333%;
+}
+
+.block-2-ph {
+  width: 16.66666666%;
+}
+
+.block-3-ph {
+  width: 25%;
+}
+
+.block-4-ph {
+  width: 33.33333333%;
+}
+
+.block-5-ph {
+  width: 41.66666667%;
+}
+
+.block-6-ph {
+  width: 50%;
+}
+
+.block-7-ph {
+  width: 58.33333333%;
+}
+
+.block-8-ph {
+  width: 66.66666666%;
+}
+
+.block-9-ph {
+  width: 75%;
+}
+
+.block-10-ph {
+  width: 83.33333333%;
+}
+
+.block-11-ph {
+  width: 91.66666666%;
+}
+
+.block-12-ph {
+  width: 100%;
+}
+
+.block-1-tb {
+  width: 8.33333333%;
+}
+
+.block-2-tb {
+  width: 16.66666666%;
+}
+
+.block-3-tb {
+  width: 25%;
+}
+
+.block-4-tb {
+  width: 33.33333333%;
+}
+
+.block-5-tb {
+  width: 41.66666667%;
+}
+
+.block-6-tb {
+  width: 50%;
+}
+
+.block-7-tb {
+  width: 58.33333333%;
+}
+
+.block-8-tb {
+  width: 66.66666666%;
+}
+
+.block-9-tb {
+  width: 75%;
+}
+
+.block-10-tb {
+  width: 83.33333333%;
+}
+
+.block-11-tb {
+  width: 91.66666666%;
+}
+
+.block-12-tb {
+  width: 100%;
+}
+
+.block-1-lp {
+  width: 8.33333333%;
+}
+
+.block-2-lp {
+  width: 16.66666666%;
+}
+
+.block-3-lp {
+  width: 25%;
+}
+
+.block-4-lp {
+  width: 33.33333333%;
+}
+
+.block-5-lp {
+  width: 41.66666667%;
+}
+
+.block-6-lp {
+  width: 50%;
+}
+
+.block-7-lp {
+  width: 58.33333333%;
+}
+
+.block-8-lp {
+  width: 66.66666666%;
+}
+
+.block-9-lp {
+  width: 75%;
+}
+
+.block-10-lp {
+  width: 83.33333333%;
+}
+
+.block-11-lp {
+  width: 91.66666666%;
+}
+
+.block-12-lp {
+  width: 100%;
+}
+
+.block-1-ds {
+  width: 8.33333333%;
+}
+
+.block-2-ds {
+  width: 16.66666666%;
+}
+
+.block-3-ds {
+  width: 25%;
+}
+
+.block-4-ds {
+  width: 33.33333333%;
+}
+
+.block-5-ds {
+  width: 41.66666667%;
+}
+
+.block-6-ds {
+  width: 50%;
+}
+
+.block-7-ds {
+  width: 58.33333333%;
+}
+
+.block-8-ds {
+  width: 66.66666666%;
+}
+
+.block-9-ds {
+  width: 75%;
+}
+
+.block-10-ds {
+  width: 83.33333333%;
+}
+
+.block-11-ds {
+  width: 91.66666666%;
+}
+
+.block-12-ds {
+  width: 100%;
+}

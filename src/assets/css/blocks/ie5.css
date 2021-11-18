@@ -1,0 +1,130 @@
+body { 
+    margin: 0;
+}
+
+/* Clearfix taken from here: http://nicolasgallagher.com/micro-clearfix-hack/. */
+
+.clearfix { 
+    zoom: 1; 
+}
+
+.clearfix:before,
+.clearfix:after { 
+    content: "";
+    display: table; 
+}
+
+.clearfix:after {
+    clear: both; 
+}
+
+.blocks-container {
+    padding: 0 1px; /* Without this rule, blocks will line up in column. Paddings must be at least nominal */
+}
+
+.blocks-container > .blocks-container__item {
+    float: left;
+}
+
+.blocks-container--2 > .blocks-container__item { 
+    width: 50%;
+}
+
+.blocks-container--3 > .blocks-container__item,
+.blocks-container--3-2 > .blocks-container__item  { 
+    width: 33.33%;
+}
+
+.blocks-container--4 > .blocks-container__item,
+.blocks-container--4-2 > .blocks-container__item { 
+    width: 25%;
+}
+
+.blocks-container--5 > .blocks-container__item { 
+    width: 20%;
+}
+
+.blocks-container--6 > .blocks-container__item { 
+    width: 16.66%;
+}
+
+.blocks-container--inline {
+    padding: 8px 0;
+}
+
+.blocks-container--inline > .blocks-container__item {
+    display: inline;
+    float: none;
+}
+
+.blocks-container--inline > .blocks-container__item > * {
+    display: inline;
+}
+
+.blocks-container--inline > .blocks-container__item-buffer {
+    padding: 0 8px;
+}
+
+.blocks-container--fix-width-left > .blocks-container__item,
+.blocks-container--self-width-left > .blocks-container__item {
+    float: left;
+}
+
+.blocks-container--fix-width-right > .blocks-container__item,
+.blocks-container--self-width-right > .blocks-container__item {
+    float: right;
+}
+
+.blocks-container--fix-width-center {
+    /* Since I know the widths of the blocks, 
+    then I also know the total width of the
+    parent block. So, I can use margin auto property. */
+    margin: 0 auto;
+    width: 198px; /* 66*3 = 198 (all width will be 200px, because there are padding: 0 1px;) */
+}
+
+/* self width */
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* block content aligning */
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.mb-auto {
+    margin-bottom: auto;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.m-auto {
+    margin: auto;
+}

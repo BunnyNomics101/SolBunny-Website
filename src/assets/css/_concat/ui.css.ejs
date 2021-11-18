@@ -1,0 +1,96 @@
+---
+permalink: assets/css/ui.css
+---
+
+button{
+    background: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Link */
+a{
+    text-decoration: none;
+    transition: color .4s ease 0s;
+}
+
+a.current{
+    color: rgb(125, 43, 196);
+}
+
+a:hover,
+a.hover{
+    color: rgb(194, 125, 255);
+}
+
+a:focus,
+a.focus{
+    outline: 1px solid rgb(125, 43, 196);
+    outline-offset: 0px;
+}
+
+a:active,
+a.active{
+    color:  rgb(125, 43, 196);
+}
+
+
+/* Button */
+.button, button{
+    padding: 11.5px 30px;
+    transition: .4s ease 0s;
+    border: 0;
+    box-shadow: rgb(125, 43, 196) 0px 1px 20px 0px;
+    background: rgb(162, 56, 255);
+    border-radius: 50px;
+    color: white;
+    font-size: 17px;
+    line-height: 23.8px;
+    font-family: 'questrial';
+    font-weight: 400;
+    min-width: 165px;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+
+
+button.hover,
+.button:hover,
+.button.hover,
+button:hover{
+    box-shadow: rgb(125, 43, 196) 0px 1px 20px 0px;
+    background: #ffffff;
+    color: black;
+    border-color: rgb(34, 35, 35);
+}
+
+button:focus,
+button.focus,
+.button:focus,
+.button.focus{
+    outline: 1px solid rgb(125, 43, 196);
+    outline-offset: 10px;
+}
+
+
+button:active,
+button.active,
+.button:active,
+.button.active{
+    background-color:  rgb(125, 43, 196);
+    color: #ffffff;
+    outline-offset: 0px;
+}
+
+
+button:disabled,
+button.disabled
+.button:disabled,
+.button.disabled{
+    background: #718096;    
+    color: white;
+    cursor: not-allowed;
+}
+
+
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    {% include "partials/head.njk" %}
+<body>
+
+    {% set navList = menu %}
+    {% include "partials/header.njk" %}
+    
+    {{content | safe}}
+
+    {% include "partials/footer.njk" %}
+
+    {% if customScriptParam %}
+        {{customScriptParam | safe}}
+    {% endif %}
+    
+    <script async  src="/assets/js/menu.js"></script>
+
+    
+</body>
+</html>

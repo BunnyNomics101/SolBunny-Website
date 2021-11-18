@@ -1,0 +1,31 @@
+h1,h2,h3,h4,p,a,ul, time, figcaption, strong, cite,blockquote{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+h3{
+    display: inline;
+}
+
+div,section,main{
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button{
+    cursor: pointer;
+}
+
+input{
+    background: 0;
+    border: 0;
+    -webkit-appearance: none;
+}
+
+.fit-content{
+    width: fit-content;
+}

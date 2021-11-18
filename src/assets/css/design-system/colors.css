@@ -1,0 +1,60 @@
+.color-black{
+    color: #333333;
+}
+
+.bg-black{
+    background-color: #333333;
+}
+
+
+.color-gray{
+    color: #232323;
+}
+
+.bg-gray{
+    background-color: #232323;
+}
+
+
+.color-white{
+    color: #ffffff;
+}
+
+.bg-white{
+    background-color: #ffffff;
+}
+
+
+.color-purple-light{
+    color: #bf7cfb;
+}
+
+.bg-purple-light{
+    background-color: #bf7cfb;
+}
+
+
+.color-purple{
+    color: rgb(162, 56, 255);
+}
+
+.bg-purple{
+    background-color: rgb(162, 56, 255);
+}
+
+
+.color-purple-dark{
+    color: rgb(125, 43, 196);
+}
+
+.bg-purple-dark{
+    background-color: rgb(125, 43, 196);
+}
+
+
+
+
+
+
+
+

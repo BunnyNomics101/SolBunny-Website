@@ -1,0 +1,39 @@
+---
+permalink: assets/css/ie8.css
+---
+
+
+.header{
+    background: #232323;
+}
+
+.hero__info{
+    width: 60%;
+}
+
+.hero__image{
+    width: 40%;
+}
+
+.join__grid__item{
+    width: 33.33%;
+}
+
+.roadmap__item-wrapper, .roadmap__spacer {
+    border: 0;
+}
+
+@media screen and (max-width: <%= config.breakpoints.tablet + "px" %>){
+    .main-menu__item{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: <%= config.breakpoints.mobile + "px" %>){
+    .roadmap__main{
+        width: auto;
+    }
+}
+
+
+

@@ -1,0 +1,34 @@
+---
+    title: "Design system"
+    permalink: "/design-system/index.html"
+    layout: "/layouts/design-system/design-system-base.njk"
+---
+
+<div class="main">
+    <main>
+  
+        <div class="container-tb">
+
+          <ul class="components-list blocks-container blocks-container-tb clearfix">
+              {% for designSystemItem in collections.designSystem %}
+                <li class="component-card component-card--shadow block block-4-tb block-12 block-6-ph">
+                  <div class="buffer-s blocks-container__full-height-child">
+                    <a href="{{ designSystemItem.url }}">
+                      <div class="component-card__inner">
+                        <h2 class="component-card__heading components__h2">{{ designSystemItem.data.title }}</h2>
+                        <div class="component-card__img">
+                          <picture>
+                            <source type="image/svg+xml" srcset="{{ designSystemItem.data.prevImage }}.svg">
+                            <img src="{{ designSystemItem.data.prevImage }}.png" alt="{{ designSystemItem.data.title }} layout" width="220" height="148" loading="lazy" decoding="async">
+                          </picture>
+                        </div>
+                      </div>                                    
+                    </a>
+                  </div>
+                </li>
+              {% endfor %}
+          </ul>
+
+        </div>
+    </main>
+</div>

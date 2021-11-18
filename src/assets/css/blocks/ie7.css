@@ -1,0 +1,18 @@
+/* fix + full width */
+
+.blocks-container--fix-full {
+    position: relative;
+    min-height: 66px;
+}
+
+.blocks-container__item--fix {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.blocks-container__item--full {
+    /* Since I know the widths of the fix-block, 
+    I can use margin auto property as size of fix-block. */
+    margin-left: 66px; 
+}

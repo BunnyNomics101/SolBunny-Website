@@ -1,0 +1,22 @@
+
+/* Just for demo. */
+
+.mock-block {
+    background-color: #EEEEEE;
+    border: 1px solid #000000;
+}
+
+.mock-block--fix {
+   width: 48px;
+   height: 48px;
+}
+
+.mock-block--big {
+    width: 198px;
+    height: 198px;
+}
+
+.background-block {
+    background-color: #EEF6FF;
+     box-shadow: 0 0 0 1px #000000;
+}

@@ -1,0 +1,311 @@
+/*
+---
+permalink: assets/css/header.css
+---
+*/
+
+.header{
+    z-index: 999;
+}
+
+.header.scrolled{
+    background: rgb(34, 35, 35);
+    box-shadow: 0 7px 8px rgb(0 0 0 / 50%);
+}
+
+.header.opened{
+    background: rgb(34, 35, 35);
+    box-shadow: 0 ;
+}
+
+
+.header__container{
+    padding-top: 13px;
+}
+
+.main-menu__item:first-child{
+    display: none;
+}
+
+/* main-menu */
+
+.main-menu {
+    margin: 0;
+    padding: 8px 0;
+}
+
+.main-menu__item{
+    margin-left: 26px;
+}
+
+.main-menu__item a{
+    display: block;
+    float: left;
+}
+
+.main-menu__link {
+    white-space: nowrap;
+    outline-offset: 0px;
+}
+
+/* containers */
+/* Since IE 7, the max-width property works */
+
+.header__container.container {
+    max-width: 824px;
+    position: relative;
+}
+/* social */
+
+/* Since IE 8, we can remove for list list-style property. */
+
+.main-menu {
+list-style: none;
+}
+
+
+.header__main-menu-burger.burger { /* Burger is not needed if it is not a mobile version and javascript is not connected. */
+    display: none;
+}
+  
+  .header--sticky {
+    position: fixed;
+    position: -webkit-fixed;
+    width: 100%;
+    top: 0;
+  }
+
+
+  .header--sticky ~ * .anchor-target {
+    position: relative;
+  }
+  
+  .header--sticky ~ * .anchor-target__indent-marker {
+    position: absolute;
+    top: -57px;
+  }
+
+  .main-menu__link--current{
+        color: rgb(194, 125, 255);
+  }
+
+  .burger__button:hover{
+      background: rgb(34, 35, 35);
+  }
+
+@media (max-width: <%= config.breakpoints.laptop + "px" %>){
+    .header__main-menu-container{
+        margin-right: 0;
+    }
+
+}
+
+
+@media (max-width:  <%= config.breakpoints.tablet + "px" %>) {
+    .burger__button{
+        border-radius: 0px;
+    }
+    
+    .burger__button:focus {
+        outline-offset: 2px;
+    }
+
+    
+    .header__logo a{
+        display: block;
+        box-sizing: border-box;
+        display: flex;
+    }
+
+    .header__container{
+        padding: 13px 10px;
+    }
+
+    .js .header__logo {
+        top: 0;
+        margin-top: 0;
+    }
+    
+    .header__logo img{
+        width: 133px;
+        height: auto;
+        padding-top: 0;
+    }
+
+
+    .main-menu__item {
+        display: block;
+        float: none; /* Menu items will line up one above the other. */
+    }
+
+    .main-menu__link {
+        display: block;
+    }
+
+
+    .js .header__main-menu-burger.burger { /* Burger is not needed if it is not a mobile version and javascript is not connected. */
+        display: block;
+    }
+
+    .js .main-menu__link {
+        display: block;
+        float: none;
+    }
+
+    .js .burger { /* And here the burger is already present. */
+        position: absolute;
+        right: 10px;
+        top: 17px;
+    }
+
+
+    .header__social-links-mobile{
+        display: block;
+        position: relative;
+    }
+
+    .social-links {
+        width: 206px;
+        order: 3;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .header__social-links{
+        display: none;
+    }
+
+    .js .burger__button .burger__button-row {
+        display: none;
+    }
+
+    .js .burger__button {  /* Button is already present too. */
+        display: block; /* Here we put a display block for the button, otherwise, due to its default inline-block model, we will have 1 extra pixel from the parent. */
+        width: 30px;
+        height: 20px;
+        padding: 3px;
+        border: 0;
+        background-image: url("../img/burger.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 18px 12px;
+        background-color: unset;
+        min-width: auto;
+        box-sizing: content-box;
+        box-shadow: unset;
+    }
+
+
+    .js .burger__button--opened {
+        background-image: url("../img/cross.png");
+        background-position: center;
+        background-size: 14px 14px;
+        background-repeat: no-repeat;
+    }
+
+    .svg .burger__button {
+        background-image: url("../img/burger.svg");
+    }
+
+
+    .svg .burger__button--opened {
+        background-image: url("../img/cross.svg");
+    }
+
+    .js .header__main-menu-container--opened {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: block;
+        margin: 0;
+        width: 100%;
+        background-color: rgb(34, 35, 35);
+        box-shadow: 0 7px 8px rgb(0 0 0 / 50%);
+        padding-bottom: 15px;
+    }
+
+
+    .js .header__logo {
+        /* The button has appeared, and it has absolute positioning. To prevent the logo from running over the button, we will return static positioning to it. */
+        position: static;
+        display: block;
+        margin-right: auto;
+    }
+
+    .js .header__main-menu-container { /* Default class for menu (with js). */
+        display: none;
+    }
+
+    .js .header__main-menu-container--opened { /* Class for opened menu. */
+        display: block;
+    }
+
+    .js .header__main-menu-container--opened .main-menu__link{
+        display: block;
+    }
+
+
+}
+
+@supports (display: flex) { /* https://developer.mozilla.org/en-US/docs/Web/CSS/@supports */
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+    .main-menu {
+        display: flex;
+        padding: 0;
+    }
+
+
+    .header__main-menu-burger {
+        display: none;
+    }
+
+    .header__logo {
+        position: static; /* The flex property works, and you can return the elements to their positioning. */
+    }
+
+    .burger {
+        box-sizing: border-box;
+        width: 36px;
+    }
+
+
+    @media (max-width: <%= config.breakpoints.tablet + "px" %>) {
+        .header__social-links-mobile{
+            display: flex;
+        }    
+
+        .header__container {
+            flex-wrap: wrap; /* Let's allow the transfer of elements so that on a small screen they become one under the other. */
+        }
+        
+        .js .header__main-menu-burger {
+            position: static;
+            order: 2; /* We change the arrangement of elements on the mobile version, and explicitly indicate the order to them. */
+        }
+
+        .header__logo {
+            order: 1;
+        }
+
+        .header__main-menu-container {
+            width: 100%; /* The menu becomes a dropdown and is transferred to a new row. Should fill the entire screen width. */
+            margin: 0;
+            order: 4;
+        }
+
+        .main-menu {
+            flex-direction: column;
+        }
+
+        .main-menu__item {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}
+    
