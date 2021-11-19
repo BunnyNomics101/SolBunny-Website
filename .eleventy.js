@@ -516,7 +516,8 @@ module.exports = function (eleventyConfig){
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
 	eleventyConfig.addWatchTarget("src/assets/fonts");
   eleventyConfig.addPassthroughCopy("src/assets/js");
-	eleventyConfig.addWatchTarget("src/assets/js");  
+	eleventyConfig.addWatchTarget("src/assets/js");
+  eleventyConfig.addPassthroughCopy("src/favicon.ico");  
     
   eleventyConfig.addNunjucksShortcode("divider", function() {
     pushdividerOnWidthStack(this.page, 4);
