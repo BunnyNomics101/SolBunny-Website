@@ -22,6 +22,12 @@ const IMAGE_DENSITY_CONFIGURATION = [
   { from: config.breakpoints.tablet, to: Number.POSITIVE_INFINITY, multipliers: config.densityConfiguration.desktop},
 ];
 
+const faviconPlugin = require("eleventy-favicon");
+
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(faviconPlugin, options);
+};
+
 let sizeRanges = convertInf(config.sizeRanges);
 
 function convertInf(infArr){
