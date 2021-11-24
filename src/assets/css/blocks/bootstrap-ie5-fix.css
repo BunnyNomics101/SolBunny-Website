@@ -1,3 +1,0 @@
-body { 
-  overflow-x: hidden; /* The page has a small scroll - fix for IE5. Newer IE versions versions do not have this problem. */
-}

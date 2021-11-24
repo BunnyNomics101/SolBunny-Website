@@ -1,9 +1,0 @@
-.blocks-equal-height {
-  display: block;
-  width: 100%;
-}
-
-.blocks-equal-height__block {
-  display: block;
-  float: left;
-}

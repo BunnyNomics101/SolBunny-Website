@@ -1,0 +1,56 @@
+---
+permalink: assets/css/background.css
+---
+
+
+.hero{
+    background: url(/assets/img/gradient1.svg) center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero::after{
+  content: "";
+  width: 504px;
+  height: 546px;
+  background: url(/assets/img/logo_gradient.svg) no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+
+#intro > .background{
+    background: url(/assets/img/parralax_frame.svg) right repeat-y fixed;
+    /* , url(/assets/img/gradient2.webp) center no-repeat;  */
+    background-size: 27.22% auto, contain;
+  }
+
+  #tokenomics{
+    background: url(/assets/img/parralax_frame.svg) left repeat-y fixed;
+    /* , url(/assets/img/gradient3.webp) center no-repeat;  */
+    background-size: 27.22% auto, contain;
+  }
+
+  #join{
+    background: url(/assets/img/join__bg.svg) left 0 no-repeat fixed;
+    /* ,url(/assets/img/gradient4.webp) center no-repeat;  */
+    background-size: contain;
+  
+  }
+
+  @media screen and (max-width: <%= config.breakpoints.tablet + "px" %>){
+    .hero::after {
+      width: 285px;
+      height: 200px;
+    }
+    #intro > .background{
+        background: 0
+      }
+    
+      #tokenomics{
+        background: 0
+      }
+  }
