@@ -42,30 +42,30 @@ layout: layouts/index.njk
               
               <div class="hero__buttons blocks-container clearfix">
                 <div class="buffer float-left">
-                <a href="https://discord.gg/sHayGGHr">
-                  <button>Join Us</button>
-                  </a>
+                <a class="button" href="https://discord.gg/sHayGGHr">
+                  Join Us
+                </a>
                 </div>
                 <div class="buffer float-left">
-                <a href="https://raydium.io/swap/?from=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&to=
+                <a class="button" href="https://raydium.io/swap/?from=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&to=
                 7zhbkbKpGaUsJW7AD4yyAfGGoy53Xx2H3Ai5BKcwGKHw">
-                  <button>Buy now</button>
-                  </a>
+                  Buy now
+                </a>
+                  
+                
                 </div>
               </div>
             </div>
 
             <div class="buffer hero__image block-12 block-6-ph block-4-tb float-left">
-              
-              {% imagePngSelfSize "src/assets/img/intro__image.webp", "just a bunny", "100vw", "1350", "1350" %}
-
+              {% pictureSvgPng "src/assets/img/intro__image.svg", "just a bunny", "450", "450" %}
             </div>
 
           </div>
             <div class="hero__enter block-12 buffer text-center">
               
             <div class="spacer-70 block-12"></div>
-              <a href="#" class="button d-inline-block text-center" aria-label="Enter BunnyVerse">Enter BunnyVerse</a>
+              <a href="#" class="button d-inline-block text-center">Enter BunnyVerse</a>
             </div>
 
           <div class="spacer-20"></div>
@@ -86,7 +86,7 @@ layout: layouts/index.njk
                 <div class="spacer spacer-140"></div>
                 <div class="about__header blocks-container clearfix f-flex align-items-center">
                   <div class="buffer float-left" role="presentation" aria-hidden="true">
-                    {% imagePngSelfSize "src/assets/img/quantum-hop.svg", "Icon", "100vw", "70", "70" %}
+                    {% imagePngSelfSize "src/assets/img/quantum-hop.svg", "", "100vw", "70", "70" %}
 
                   </div>
                   <p class="h3 heading-small quest buffer float-left">BUNNY QUANTUM-HOP</p>
@@ -113,7 +113,7 @@ layout: layouts/index.njk
               <div class="about__image buffer float-left ml-auto">
                 <div class="spacer spacer-140"></div>
                 <div class="about__image_wrapper" data-speed="10" role="presentation" aria-hidden="true">
-                  {% pictureSvgPng "src/assets/img/bunnies-with-baloons.svg", "bunnies with baloons", "544", "683" %}
+                  {% pictureSvgPng "src/assets/img/bunnies-with-baloons.svg", "", "544", "683" %}
                 </div>
                 <div class="spacer spacer-140"></div>
               </div>
@@ -129,8 +129,8 @@ layout: layouts/index.njk
             <div class="about__gradient"></div>
             <div class="about__image buffer float-left">
               <div class="spacer spacer-140"></div>
-              <div class="about__image_wrapper" speed="20" role="presentation" aria-hidden="true">
-                {% pictureSvgPng "src/assets/img/bunnie-teacher.svg", " bunnie teacher", "544", "365" %}
+              <div class="about__image_wrapper" data-speed="20" role="presentation" aria-hidden="true">
+                {% pictureSvgPng "src/assets/img/bunnie-teacher.svg", "", "544", "365" %}
               </div>
               <div class="spacer spacer-140"></div>
             </div>
@@ -139,7 +139,7 @@ layout: layouts/index.njk
               <div class="spacer spacer-140"></div>
               <div class="about__header blocks-container clearfix f-flex align-items-center">
                 <div class="buffer float-left" role="presentation" aria-hidden="true">
-                  {% imagePngSelfSize "src/assets/img/tokenomics.svg", "Icon", "100vw", "70", "70" %}
+                  {% imagePngSelfSize "src/assets/img/tokenomics.svg", "", "100vw", "70", "70" %}
                 </div>
                 <p class="h3 heading-small quest buffer float-left">TOKENOMICS</p>
               </div>
@@ -173,7 +173,7 @@ layout: layouts/index.njk
         <div class="container-lp page-section blocks-container clearfix">
           <div class="join__header mx-auto text-center">
             <div class="buffer mx-auto" role="presentation" aria-hidden="true">
-              {% imagePngSelfSize "src/assets/img/join4.svg", "Join The Community Icon", "100vw", "70", "70" %}
+              {% imagePngSelfSize "src/assets/img/join4.svg", "", "100vw", "70", "70" %}
 
             </div>
 
@@ -192,7 +192,7 @@ layout: layouts/index.njk
               </div>
 
               <div class="buffer">
-                <a href="https://twitter.com/SolanaBunny" aria-label="Our twitter link" class
+                <a href="https://twitter.com/SolanaBunny"  class
                 ="button mx-auto d-block">Twitter</a>
               </div>
             </div>
@@ -203,7 +203,7 @@ layout: layouts/index.njk
               </div>
 
               <div class="buffer">
-                <a aria-label="Out Discord Link" href="https://discord.gg/sHayGGHr" class=
+                <a  href="https://discord.gg/sHayGGHr" class=
                 "button mx-auto d-block">Discord</a>
               </div>
             </div>
@@ -214,7 +214,7 @@ layout: layouts/index.njk
               </div>
 
               <div class="buffer">
-                <a aria-label="Our Reddit Link" href="https://www.reddit.com/r/SolBunny/" class
+                <a href="https://www.reddit.com/r/SolBunny/" class
                 ="button mx-auto d-block">Reddit</a>
               </div>
             </div>
@@ -223,7 +223,7 @@ layout: layouts/index.njk
               <div class="animation-target indicator indicator--1 buffer">
 
                 <div class="cirlce">
-                  <div class="circle__image" aria-hidden="true">
+                  <div class="circle__image" aria-hidden="true" role="presentation">
                     {% imagePngSelfSize "src/assets/img/join1.svg", "", "100vw", "195", "175" %}
                   </div>
                   <svg width="220" height="220" class="indicator__svg">
@@ -261,7 +261,7 @@ layout: layouts/index.njk
               <div class="animation-target indicator indicator--2 buffer">
 
                 <div class="cirlce">
-                  <div class="circle__image" aria-hidden="true">
+                  <div class="circle__image" aria-hidden="true" role="presentation">
                     {% imagePngSelfSize "src/assets/img/join2.svg", "", "100vw", "195", "175" %}
                   </div>
                   <svg width="220" height="220" class="indicator__svg">
@@ -298,7 +298,7 @@ layout: layouts/index.njk
               <div class="animation-target indicator indicator--3 buffer">
 
                 <div class="cirlce">
-                  <div class="circle__image" aria-hidden="true">
+                  <div class="circle__image" aria-hidden="true" role="presentation">
                     {% imagePngSelfSize "src/assets/img/join3.svg", "", "100vw", "195", "175" %}
                   </div>
                   <svg width="220" height="220" class="indicator__svg">
@@ -418,7 +418,7 @@ layout: layouts/index.njk
                 <div class="roadmap__item">
                   <div class="blocks-container clearfix d-flex align-items-center">
                     <div class="buffer float-left" role="presentation" aria-hidden="true">
-                      {% imagePngSelfSize "src/assets/img/roadmap4.svg", "Icon", "100vw", "48", "48" %}
+                      {% imagePngSelfSize "src/assets/img/roadmap4.svg", "", "100vw", "48", "48" %}
                     </div>
                     <h3 class="text float-left">2023 — Karma</h3>
                   </div>
@@ -441,7 +441,7 @@ layout: layouts/index.njk
             <div class="spacer-50"></div>
 
             <div class="buffer">
-              <a aria-label="Buy now" href="https://raydium.io/swap/?from=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&to=
+              <a href="https://raydium.io/swap/?from=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&to=
               7zhbkbKpGaUsJW7AD4yyAfGGoy53Xx2H3Ai5BKcwGKHw" class="roadmap__buy button d-inline-block">Buy Now</a>
             </div>
             

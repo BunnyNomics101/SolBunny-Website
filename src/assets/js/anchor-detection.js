@@ -22,8 +22,9 @@
         
         window.classFunction.removeClass(previousLink, 'main-menu__link--current');
         window.classFunction.removeClass(previousSideLink, 'section-navigation__link--current');
-        window.classFunction.addClass(targets[targets.length-1], 'main-menu__link--current');
-        window.classFunction.addClass(sideLinks[sideLinks.length-1], 'section-navigation__link--current');        
+
+        window.classFunction.addClass(links[links.length-1], 'main-menu__link--current');
+        window.classFunction.addClass(sideLinks[sideLinks.length-1], 'section-navigation__link--current');    
         return link;
       } else if (targetPosition.bottom > windowPosition.top &&
         targetPosition.top < windowPosition.bottom) {
